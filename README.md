@@ -1,8 +1,8 @@
-## LLMs are Noisy Oracles! LLM-based Noise-aware Graph Active Learning for Node Classification
+# LLMs are Noisy Oracles! LLM-based Noise-aware Graph Active Learning for Node Classification
 
 This repository contains the implementation of DMA in the paper *"LLMs are Noisy Oracles! LLM-based Noise-aware Graph Active Learning for Node Classification"*.
 
-#### Requirements
+### Requirements
 
 1. To install the requirements:
 
