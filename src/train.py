@@ -14,12 +14,8 @@ from src.utils import seed_everything
 def train_pipeline(args ,mask ,dataset ,pre_labels ):
     print("#---------------------------mode_training------------------------------#")
     device="cpu" if args.device<0 else "cuda:"+str(args.device)
-    if args.dataset == 'ogbn-arxiv':
-        features=dataset.x.to(device)
-        labels=dataset.y.squeeze(1).to(device)
-    else:
-        features=dataset.feature.to(device)
-        labels=dataset.labels.to(device)
+    features=dataset.feature.to(device)
+    labels=dataset.labels.to(device)
     pre_labels=pre_labels.to(device)
     edge_index=dataset.edge_index.to(device)
     train_mask,val_mask,test_mask = mask
